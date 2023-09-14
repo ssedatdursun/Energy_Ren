@@ -7,9 +7,9 @@ import plotly.graph_objs as go
 import seaborn as sns
 st.set_page_config(page_title='Sales Dashboard',page_icon=':bar_chart:',layout='wide')
 
-df = pd.read_csv('C:/Users/Sedat/Desktop/dashboard/energyy.csv')
+df = pd.read_csv('energyy.csv')
 df.drop('Unnamed: 0', axis=1,inplace=True)
-df_solar=pd.read_csv('C:/Users/Sedat/Desktop/dashboard/energy_solar.csv')
+df_solar=pd.read_csv('energy_solar.csv')
 df_solar.drop('Unnamed: 0', axis=1,inplace=True)
 
 # Streamlit uygulamasını başlat
